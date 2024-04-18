@@ -1,0 +1,117 @@
+body {
+  background-color: black;
+  color: #ccc;
+}
+
+.navbar {
+    background-color:#232323;
+    color: white;
+}
+.navbar-nav .nav-item {
+    color: white; /* Set the color of li elements */
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important; /* Set the color of anchor elements */
+  }
+  .navbar-nav .nav-item:hover {
+    color: #F2D17A; /* Set the hover color for li elements */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #F2D17A !important; /* Set the hover color for anchor elements */
+  }
+  .custom-carousel-caption {
+      color: #ffffff; /* Change caption text color */
+    }
+    .custom-carousel-control-prev,
+    .custom-carousel-control-next {
+      background-color: #007bff; /* Change button background color */
+    }
+    .custom-carousel-control-prev-icon,
+    .custom-carousel-control-next-icon {
+      fill: #ffffff; /* Change button icon color */
+    }
+    .custom-carousel-indicator {
+      background-color: #007bff; /* Change indicator color */
+    }
+    .custom-carousel-indicator .active {
+      background-color: #ffffff; /* Change active indicator circle color */
+    }
+    .section1{
+      text-align: center;
+      margin-top: 30px;
+    }
+   /* lading page css */
+   .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.room-card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.room-card img {
+    width: 100%;
+    height: auto;
+}
+
+.room-card h3 {
+    color: #333;
+}
+
+.room-card p.details {
+    color: #444; /* Updated color for details */
+}
+
+.room-card p.booking-info {
+    color: #666; /* Updated color for booking information */
+}
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  /* Add any additional styling for the card here */
+}
+/* dailog box */
+.custom-dialog {
+  background-color: black;
+  color: brown;
+}
+.card {
+  transition: transform 0.5s;
+}
+
+.card.hovered {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.card.hovered ~ .card {
+  opacity: 0.15;
+}
+
+.card.hovered ~ .card .details {
+  display: none;
+}
+.facilties-section{
+  background-color: white;
+  color: black;
+}
+.hotel-facilties{
+  text-align: center;
+
+}
