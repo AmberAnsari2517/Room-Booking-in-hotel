@@ -1,7 +1,4 @@
-body {
-  background-color: black;
-  color: #ccc;
-}
+
 
 .navbar {
     background-color:#232323;
@@ -38,9 +35,26 @@ body {
     .custom-carousel-indicator .active {
       background-color: #ffffff; /* Change active indicator circle color */
     }
+    /* Papularhotel section */
+    .papula-section{
+      margin-top: 50px;
+    }
+    .papula-section h2{
+      text-transform: capitalize;
+
+    }
     .section1{
       text-align: center;
-      margin-top: 30px;
+      padding: 50px;
+      
+    }
+    .section1 h2{
+      text-transform: capitalize;
+    }
+    .card-section{
+      background-color:rgb(247, 245, 241);
+      color: black;
+      margin-top: 0;
     }
    /* lading page css */
    .room-container {
@@ -83,10 +97,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.card {
-  /* Add any additional styling for the card here */
-}
-/* dailog box */
+
 .custom-dialog {
   background-color: black;
   color: brown;
@@ -110,8 +121,84 @@ body {
 .facilties-section{
   background-color: white;
   color: black;
+
 }
-.hotel-facilties{
+
+.facilties-row{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+.card-facilties{
+  background-color: rgb(247, 245, 241) ;
+  margin-bottom: 40px;
+  width: 270px;
+}
+.card-facilties-about{
+  background-color: rgb(247, 245, 241) ;
+  margin-bottom: 40px;
+  width: 230px;
+}
+.hotel-facilties {
+justify-content: center;
+
+}
+.facilties-text{
+  margin-bottom: 30px;
   text-align: center;
 
+}
+.facilties-text h2{
+  margin-top: 70px;
+}
+/* facilties secton */
+
+
+/* animation section */
+.photo-animation{
+  color: black;
+  background-color:rgb(247, 245, 241);
+  margin-top: 100px!important;
+}
+.about-content{
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.about-content .content-title h5{
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.about-content .content-title h2 {
+  font-size: 70px;
+}
+.about-content .content-title p {
+  font-size: 12px;
+}
+/* styles.css */
+.footer-container {
+  background-color: white; /* Change to whatever color you prefer */
+  color: black;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+/* about us css */
+.aboutus{
+  margin: 100px 100px 30px 100px;
+}
+/* contect section */
+.contect{
+  color: black;
+  background-color:rgb(247, 245, 241);}
+  .contect .contect-icon{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+.foter-botom{
+  background-color: #b99470 !important;
+  ;
 }

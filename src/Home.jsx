@@ -36,14 +36,14 @@ export const Home = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link to='/aboutus' className="nav-link" >
                   About <i className="fa-solid fa-heart"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <Button type='btn' style={{ backgroundColor: '#F2D17A', }}>Contect <i className="fa-brands fa-blogger"></i></Button>
+            <Link to='/contect'>Contect <i className="fa-brands fa-blogger"></i></Link>
             <Button style={{ backgroundColor: '#F2D17A', borderRadius: '13px', color: 'white', marginLeft: 20 }}>Acount</Button>
           </div>
         </div>
@@ -93,10 +93,7 @@ export const Home = () => {
 
 
 
-      <section className='section1'>
-        <h2>Our most papular hotel</h2>
-        <p>Choose from our range of luxurious rooms and book your stay now.</p>
-      </section>
+      
       <Landing/>
       <Footer/>
 

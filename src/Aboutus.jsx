@@ -1,9 +1,11 @@
 import React from 'react';
+import { videoabout } from './Asset'; // Assuming videoabout is the path to your video file
 import { imgroom1, imgroom2, imgroom3, imgroom4, imgroom5, imgroom6, imgroom7, imgroom8, imgroom9, imgroom10, imgroom11, imgroom12 } from './Asset';
-import { Room1, Room2, Room3, f1, f2, f3, hotelimg, profile, cardimg, cardimg2 } from './Asset'; // Make sure to import Room1 component
 import { useState } from 'react';
-export const Landing = () => {
-    const [hoveredCard, setHoveredCard] = useState(null);
+import { Footer } from './footer';
+import { Room1, Room2, Room3, f1, f2, f3, hotelimg, profile, cardimg, cardimg2, line } from './Asset'; // Make sure to import Room1 component
+
+export const Aboutus = () => {
 
     const landingpage = [
         {
@@ -86,36 +88,29 @@ export const Landing = () => {
 
 
     ]
-
-
     return (
-        <div>
+       <div>
+         <div className='container'>
             <section>
-                <div className='container papula-section'>
-                    <h2 className="text-center mb-4">Our most popular hotel</h2>
-                    <div className='row'>
-                        <div className='col-lg-6'>
-                            <div style={{ position: 'relative' }}>
-                                <img src={profile} alt="Popular Hotel" style={{ height: 300, width: 400 }} />
-                                <div style={{ position: 'absolute', top: 0, left: 0 }}>
-                                    <img src={profile} alt="Popular Hotel" style={{ height: 300, width: 400 }} />
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div className='col-lg-4 d-flex align-items-center'>
-                            <div>
-                                <h3>About us</h3>
-                                <p>
-                                    Welcome to our luxury hotel! Nestled in the heart of the city, we offer unparalleled comfort, style, and hospitality to our guests. Our elegant accommodations, state-of-the-art facilities, and personalized services ensure a memorable stay for every visitor. Whether you're here for business or leisure, our dedicated team is committed to exceeding your expectations and creating unforgettable experiences. Discover the perfect blend of sophistication and relaxation at our hotel.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
+                <div className='aboutus'>
+                    <h3>Our Hotel</h3>
+                    <p>Welcome to our luxury hotel! Nestled in the heart of the city, we offer unparalleled comfort, style, and hospitality to our guests. Our elegant accommodations, state-of-the-art facilities, and personalized services ensure a memorable stay for every visitor.</p>
+                    <p>Whether you're here for business or leisure, our dedicated team is committed to exceeding your expectations and creating unforgettable experiences. Discover the perfect blend of sophistication and relaxation at our hotel.</p>
+                </div>
+                {/* Ensure proper grid setup for the row and column */}
+                <div className='row'>
+                   <div className='col-lg-6'>
+                       {/* Ensure the video occupies the full width of its parent container */}
+                       <video controls style={{ width: '100%', height:400}}>
+                           <source src={videoabout} type="video/mp4" />
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
                 </div>
             </section>
+            </div>
+
+            
             <section className='card-section'>
                 <section className='section1'>
                     <h2>Our Rooms</h2>
@@ -127,56 +122,24 @@ export const Landing = () => {
                             <div key={index} className="col-lg-4 ">
                                 <div
                                     className="card glass-effect"
-                                    onMouseEnter={() => setHoveredCard(index)}
-                                    onMouseLeave={() => setHoveredCard(null)}
+                                  
                                 >
+                                      <div>
                                     <img src={data.Image} style={{ width: '100%', height: 'auto' }} alt="Room" />
-                                    <h3>{data.heading}</h3>
-                                    {index === hoveredCard && (
-                                        <div>
+                                    {/* <h3>{data.heading}</h3>
+                              
+                                      
                                             <p>{data.body}</p>
-                                            <p>{data.details}</p>
+                                            <p>{data.details}</p> */}
                                         </div>
-                                    )}
+                                   
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
-            <>
-                {/* Our Services and facilties */}
-                <section className='photo-animation'>
-                    <div className='container'>
-                        <div className='row'>
-                            <div className='col-md-6'>
-                                <img src={hotelimg} className='img-fluid' />
-                            </div>
-                            <div className='col-md-6' photoanimation-right>
-                                <div className='about-content'>
-                                    <div className='content-title'>
-                                        <h5>
-                                            Luxury Hotel
-
-                                        </h5>
-                                        <h2>
-                                            Pearl Of The Adriatic.
-                                        </h2>
-                                        <p>
-                                            Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam ullamcorper nibh lacus, ac suscipit ipsum consequat porttitor.Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacinia quam. Nunc rutrum porta ex, in imperdiet tortor feugiat at.
-                                        </p>
-                                        <p>
-                                            Cras finibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis posuere felis. In commodo mi lectus venenatis metus eget fringilla. Suspendisse varius ante eget.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section className='facilties-section '>
+            <section className='facilties-section '>
                     <div className="container">
 
                         <div className='row hotel-facilties '>
@@ -192,17 +155,19 @@ export const Landing = () => {
 
                         <div className='row facilties-row' >
                             {faclities.map((dataarray, indexarray) =>
-                                <div className=' card-facilties  col-md-3'  >
+                                <div className='card-facilties-about  col-md-3'  >
                                     <div style={{ margin: 10 }}>
                                         <img src={dataarray.Image} />
+                                       
 
-                                        <h3>
+                                        <h3 style={{marginTop:10, marginBottom:30}}>
                                             {dataarray.head}
 
                                         </h3>
-                                        <p>
+                                       
+                                        {/* <p>
                                             {dataarray.body}
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
                             )}
@@ -214,8 +179,8 @@ export const Landing = () => {
                     </div>
 
                 </section>
-            </>
-
-        </div>
+            
+        <Footer/>
+       </div>
     );
 };

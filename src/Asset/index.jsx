@@ -15,6 +15,29 @@ export {default as imgroom9} from'./Images/d9.jpg'
 export {default as imgroom10} from'./Images/d10.jpg'
 export {default as imgroom11} from'./Images/d11.jpg'
 export {default as imgroom12} from'./Images/d12.jpg'
+export {default as f1} from'./Images/f1.png'
+export {default as f2} from'./Images/f2.png'
+export {default as f3} from'./Images/f3.png'
+export {default as line} from'./Images/line.png'
+
+
+export {default as hotelimg} from'./Images/hotelanimation.png'
+export {default as logo} from'./Images/hotel-logo.jpg'
+
+export {default as linkimg} from'./Images/Social-Links.png'
+export {default as cardimg} from'./Images/04-4.jpg'
+export {default as cardimg2} from'./Images/37-6.jpg'
+export {default as profile} from'./Images/admin.jpg'
+
+export {default as videoabout} from'./Images/videoabout.mp4'
+
+
+
+
+
+
+
+
 
 
 
