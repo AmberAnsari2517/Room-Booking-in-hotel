@@ -91,7 +91,7 @@ export const Landing = () => {
     return (
         <div>
             <section>
-                <div className='container papula-section'>
+                <div className='container papular-section'>
                     <h2 className="text-center mb-4">Our most popular hotel</h2>
                     <div className='row'>
                         <div className='col-lg-6'>
@@ -195,6 +195,7 @@ export const Landing = () => {
                                 <div className=' card-facilties  col-md-3'  >
                                     <div style={{ margin: 10 }}>
                                         <img src={dataarray.Image} />
+                                        <hr/>
 
                                         <h3>
                                             {dataarray.head}

@@ -5,6 +5,7 @@ import { Landing } from './Landing'
 import { Roombooking } from './Roombooking'
 import { Aboutus } from './Aboutus'
 import { Contect } from './Contect'
+
 export const MyRoutes = () => {
   return (
     <Routes>
@@ -12,7 +13,9 @@ export const MyRoutes = () => {
         <Route path='/landing' element={<Landing/>}/>
         <Route path='/Roombooking' element={<Roombooking/>}/>
         <Route path='/aboutus' element={<Aboutus/>}/>
-        <Route path='/contect' element={<Contect/>}/>
+        <Route path='/contact' element={<Contect/>}/>
+       
+
 
     </Routes>
   )

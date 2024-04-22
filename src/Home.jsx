@@ -36,14 +36,14 @@ export const Home = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to='/aboutus' className="nav-link" >
+                <a className="nav-link" href="/">
                   About <i className="fa-solid fa-heart"></i>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
           <div>
-            <Link to='/contect'>Contect <i className="fa-brands fa-blogger"></i></Link>
+          <Link to='/contact'>Contact <i className="fa-brands fa-blogger"></i></Link>
             <Button style={{ backgroundColor: '#F2D17A', borderRadius: '13px', color: 'white', marginLeft: 20 }}>Acount</Button>
           </div>
         </div>
@@ -93,13 +93,14 @@ export const Home = () => {
 
 
 
-      
+      <section className='section1'>
+        <h2>Our most papular hotel</h2>
+        <p>Choose from our range of luxurious rooms and book your stay now.</p>
+      </section>
       <Landing/>
       <Footer/>
 
     </div>
 
   );
-};
-
-
+}

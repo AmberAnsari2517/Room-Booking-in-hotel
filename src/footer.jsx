@@ -8,7 +8,7 @@ import EmailIcon from '@mui/icons-material/Email'; // Import the Email icon from
 export const Footer = () => {
   return (
     <div>
-      <footer className="footer-container" style={{ backgroundColor: '#b99470', color: 'white', marginTop: '50px', paddingTop: 30, paddingBottom: 30 }}>
+      <footer className="footer-container" style={{ backgroundColor: '#C29D68', color: 'white', marginTop: '50px', paddingTop: 30, paddingBottom: 30 }}>
         <div className="container">
           <div className="row gy-4 gx-5">
             <div className="col-lg-4 col-md-6 footer-column">

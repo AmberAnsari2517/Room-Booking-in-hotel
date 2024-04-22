@@ -23,6 +23,18 @@ export {default as line} from'./Images/line.png'
 
 export {default as hotelimg} from'./Images/hotelanimation.png'
 export {default as logo} from'./Images/hotel-logo.jpg'
+export {default as contect} from'./Images/modernc.jpg'
+export {default as aboutus} from'./Images/About.jpg'
+export {default as about} from'./Images/aboutus.jpg'
+export {default as roombooking} from'./Images/roombooking.jpg'
+export {default as bootmicon} from'./Images/room-bottom-icon.png'
+
+
+
+
+
+
+
 
 export {default as linkimg} from'./Images/Social-Links.png'
 export {default as cardimg} from'./Images/04-4.jpg'
@@ -30,6 +42,8 @@ export {default as cardimg2} from'./Images/37-6.jpg'
 export {default as profile} from'./Images/admin.jpg'
 
 export {default as videoabout} from'./Images/videoabout.mp4'
+export {default as aboutvideo} from'./Images/about-video.mp4'
+
 
 
 

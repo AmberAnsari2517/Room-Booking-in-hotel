@@ -4,6 +4,7 @@ import { imgroom1, imgroom2, imgroom3, imgroom4, imgroom5, imgroom6, imgroom7, i
 import { useState } from 'react';
 import { Footer } from './footer';
 import { Room1, Room2, Room3, f1, f2, f3, hotelimg, profile, cardimg, cardimg2, line } from './Asset'; // Make sure to import Room1 component
+import { about ,aboutvideo} from './Asset';
 
 export const Aboutus = () => {
 
@@ -90,19 +91,36 @@ export const Aboutus = () => {
     ]
     return (
        <div>
+           <div className='row container-fluid '>
+    <div className='col-lg-12'>
+        <div >
+            <img src={about} alt="Responsive image" style={{width: '1349px', height:'500px'}}/>
+            <h1 style={{position:'absolute', top:'50%', left:'50%' , transform: 'translate(-50%, -50%)', color: 'white'}}>About</h1>
+                        <h4 style={{position:'absolute', top:'60%', left:'50%',  transform: 'translate(-50%, -50%)', color: 'white'}}>Home/About</h4>
+
+        </div>
+    </div>
+</div>
          <div className='container'>
-            <section>
+            <section className='abousection'>
                 <div className='aboutus'>
-                    <h3>Our Hotel</h3>
+                    <h2> Abot UsOur Hotel</h2>
                     <p>Welcome to our luxury hotel! Nestled in the heart of the city, we offer unparalleled comfort, style, and hospitality to our guests. Our elegant accommodations, state-of-the-art facilities, and personalized services ensure a memorable stay for every visitor.</p>
                     <p>Whether you're here for business or leisure, our dedicated team is committed to exceeding your expectations and creating unforgettable experiences. Discover the perfect blend of sophistication and relaxation at our hotel.</p>
                 </div>
                 {/* Ensure proper grid setup for the row and column */}
                 <div className='row'>
-                   <div className='col-lg-6'>
+                   <div className='col-lg-6 container' style={{backgroundColor:'black'}}>
+                       {/* Ensure the video occupies the full width of its parent container */}
+                       <video controls style={{ width: '100%', height:400, }}>
+                           <source src={videoabout} type="video/mp4" />
+                           Your browser does not support the video tag.
+                       </video>
+                   </div>
+                   <div className='col-lg-6 container' style={{backgroundColor:'black'}} >
                        {/* Ensure the video occupies the full width of its parent container */}
                        <video controls style={{ width: '100%', height:400}}>
-                           <source src={videoabout} type="video/mp4" />
+                           <source src={aboutvideo} type="video/mp4" />
                            Your browser does not support the video tag.
                        </video>
                    </div>
@@ -161,6 +179,7 @@ export const Aboutus = () => {
                                        
 
                                         <h3 style={{marginTop:10, marginBottom:30}}>
+                                            <hr/>
                                             {dataarray.head}
 
                                         </h3>
